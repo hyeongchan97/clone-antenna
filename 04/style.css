@@ -2,15 +2,14 @@ html,body{margin: 0; font-size: 16px;}
 
 /*head*/
 
+
 .head01{
-    
     margin-left: 100px;
     margin-right: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
     display: flex;
-    
 }
 .head02{
     width: 61px;
@@ -36,7 +35,6 @@ html,body{margin: 0; font-size: 16px;}
     text-decoration: none;
     color: black;
 }
-
 .head03 > a > span{
     font-weight: bold;
     font-size: 15px;
@@ -45,27 +43,24 @@ html,body{margin: 0; font-size: 16px;}
     font-family: Aharoni,Spoqa Han Sans, sans-serif;
     line-height: 1.5;
 }
-.head03 > a:nth-child(2) > span{
+.head03 > a:nth-child(4) > span{
     color: #fde700;
 }
 .head03 span:hover{
     cursor: pointer;
     color: gray;
 }
-
 .snsn01{
     width: 228px;
     height:100px;
     position: absolute;
     right: 0;
 }
-
 .snsn02{
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 .snsn02 > div > img{
     width: 19px;
@@ -76,65 +71,228 @@ html,body{margin: 0; font-size: 16px;}
     opacity: 0.4;
 }
 
-
-
-
-
-.head04{
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.head04 a > img{
-    width: 100%;
-    height: 1135px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.head01{
+.fixx{
     background-color: #fff;
     position: sticky;
+    z-index: 999;
     top: 0px;
 }
 
 
 
-/*main*/
-main div ul{
-    padding-left: 0;
-}
 .main01{
-    height: 436px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* list-style: none; */
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .main02{
     
-    width: 800px;
-    padding: 0 20px;
-    margin: 10px 0;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .main02 > h2{
-    font-size: 1.714em;
-    line-height: 1.2;
-    font-style: normal;
-    font-weight: 700;
+    padding-right: 25px;
 }
 
+.main02 > button{
+    border-radius: 0 4px 4px 0;
+    padding: 0 18px;
+    height: 35px;
+    background: #fff;
+    background-image: none;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.main02 > button:hover{
+    cursor: pointer;
+    background-color: #fde700;
+    transition: 1s;
+}
+
+
+
 .main03{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
     
-    width: 800px;
-    padding: 0 20px;
 }
-.main03 > p{
-    font-family: 'Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
-    color: #363636;
+.main03 > span{
+    border: 1px solid #e5e7eb;
+    width: 260px;
+    padding: 5px 0px 5px 10px;
+}
+.main03 > span:nth-child(1){
+    color: red;
+}
+
+.main03 > span:nth-child(7){
+    color: red;
+}
+
+.main05{
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main05 > div{
+    
+    border: 1px solid #e5e7eb;
+    width: 280px;
+    height: 180px;
+}
+.main05 > div > ul{
+    padding-left: 22px;
+}
+.main05 > div > h2{
+    
+    padding: 5px 0px 5px 10px;
     font-size: 16px;
-    line-height: 1.5;
-    font-weight: normal;
-    font-style: normal;
+    margin-top: 0px;
 }
+.main05 > div > p{
+
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main05 > div:nth-child(1) > h2{
+    color: red;
+}
+.main05 > div:nth-child(7) > h2{
+    color: red;
+}
+
+
+.main06{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main06 > div{
+    border: 1px solid #e5e7eb;
+    width: 280px;
+    height: 180px;
+    
+}
+.main06 > div > h2{
+    padding: 5px 0px 5px 10px;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.main06 > div > p{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main06 > div:nth-child(1) > h2,
+.main06 > div:nth-child(7) > h2{
+    color: red;
+}
+.main07{
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main07 > div{
+    border: 1px solid #e5e7eb;
+    width: 280px;
+    height: 180px;
+    
+}
+.main07 > div > h2{
+    padding: 5px 0px 5px 10px;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.main07 > div > p{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main07 > div:nth-child(1) > h2,
+.main07 > div:nth-child(7) > h2{
+    color: red;
+}
+.main08{
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main08 > div{
+    border: 1px solid #e5e7eb;
+    width: 280px;
+    height: 180px;
+    
+}
+.main08 > div > h2{
+    padding: 5px 0px 5px 10px;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.main08 > div > p{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main08 > div:nth-child(1) > h2,
+.main08 > div:nth-child(7) > h2{
+    color: red;
+}
+.main09{
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main09 > div{
+    border: 1px solid #e5e7eb;
+    width: 280px;
+    height: 180px;
+    opacity: 0.4;
+    
+}
+.main09 > div > h2{
+    padding: 5px 0px 5px 10px;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.main09 > div > p{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main09 > div:nth-child(1) > h2,
+.main09 > div:nth-child(7) > h2{
+    color: red;
+}
+
+
+
+
+
+
 
 
 
@@ -151,7 +309,7 @@ main div ul{
     width: 100%;
 }
 .hadan{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.2);
     padding-top: 40px;
     padding-bottom: 50px;
     margin-left: 100px;
@@ -239,16 +397,14 @@ main div ul{
     font-size: 16px;
     font-weight: 600;
 }
+
 .hadan02 > span > img{
     width: 15px;
     height: 15px;
 }
-
 .mid > button:hover{
     cursor: pointer;
     border: none;
     background-color: #fde700;
     transition: 1s;
 }
-
-

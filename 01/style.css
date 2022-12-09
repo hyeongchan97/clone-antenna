@@ -1,4 +1,12 @@
-html,body{margin: 0; font-size: 16px;}
+html,body{margin: 0; font-size: 16px;-ms-overflow-style:none;}
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    font-style: normal;
+    font-family: Aharoni,Spoqa Han Sans, sans-serif;
+}
 /* <span class="material-symbols-outlined">expand_less </span>
 하단 아이콘 ^*/
 
@@ -16,14 +24,14 @@ html,body{margin: 0; font-size: 16px;}
 /*head*/
 
 .head01{
-    
+
     margin-left: 100px;
     margin-right: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
     display: flex;
-    cursor: pointer;
+    
 }
 .head02{
     width: 61px;
@@ -31,7 +39,7 @@ html,body{margin: 0; font-size: 16px;}
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 20px;
+    cursor: pointer;
 }
 .head02 img{
     width: 61px;
@@ -43,32 +51,56 @@ html,body{margin: 0; font-size: 16px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 120px;
-    font-size: 15px;
+    margin-left: 100px;
+}
+.head03 > a{
+    text-decoration: none;
+    color: black;
+}
+.head03 > a > span{
     font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0px;
     font-style: normal;
     font-family: Aharoni,Spoqa Han Sans, sans-serif;
+    line-height: 1.5;
 }
-
+.head03 > a:nth-child(1) > span{
+    color: #fde700;
+}
+.head03 span:hover{
+    cursor: pointer;
+    color: gray;
+}
 .snsn01{
-    border: 1px solid green;
-    width: 205px;
+    width: 228px;
     height:100px;
     position: absolute;
-    right: 0%;
+    right: 0;
+}
+
+.snsn02{
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
-
-.head04 img{
-    margin-top: 20px;
-    width: 1700px;
-    margin-left: 100px;
-    margin-bottom: 40px;
+.snsn02 > div > img{
+    width: 19px;
+    height: 19px;
+}
+.snsn02 > div:hover{
+    cursor: pointer;
+    opacity: 0.4;
 }
 
+.head04{
+    
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+}
 
 header > div > div ul{
     padding-left: 0;
@@ -77,7 +109,8 @@ header > div > div ul{
 .head05{
     list-style: none;
     width: 1700px;
-    margin: 0 auto;
+    padding-left: 60px;
+
 }
 .point01{
     
@@ -110,22 +143,39 @@ header > div > div ul{
 .btn01{
     margin-top: 60px;
 }
-.btn01 button{
+.btn01 > button{
+    font-size: 14px;
+    font-weight: 600;
     padding: 17px 24px 21px 20px;
     text-align: left;
     background-color: #fff;
-    color: rgba(54, 54, 54, 0.85) !important;
+    color: #333;
     border-color: rgba(54, 54, 54, 0.2);
     border-width: 1px;
     width: 260px;
     position: relative;
+    font-family: 'Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
 }
-.btn01 button > span{
+.btn01 > button > span{
     position: absolute;
     right: 8px;
     margin-right: 10px;
     margin-top: -1px;
 }
+.btn01 > button:hover{
+    cursor: pointer;
+    background-color: #fde700;
+    border: none;
+    transition: 1s;
+}
+.fixx{
+    background-color: #fff;
+    position: sticky;
+    z-index: 999;
+    top: 0px;
+}
+
+
 
 /* main */
 .main01{
@@ -136,7 +186,7 @@ header > div > div ul{
 
 .point02{
     display: flex;
-    padding-top: 140px;
+    padding: 140px 0 50px 0;
     margin-left: 100px;
 }
 
@@ -146,37 +196,65 @@ header > div > div ul{
     font-size: 32px;
     line-height: 1.2;
     margin-bottom: 16px;
+    
 }
-
 .point02 img{
     width: 14px;
     height: 14px; 
 }
 
 .main02{
-   display: flex;
-   flex-direction: column;
-   margin: 57px 100px 0px 100px;
+    height: 100%;
+    width: 100%;
 
 }
-.main02 div{
-    
-    width: 342px;
-    height: 342px; 
-}
 .fst{
+
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    
 }
-.fst div > img{
-    width: 342px;
-    height: 342px;
+.fst > div:nth-child(1){
+
+    width: 340px;
+    height: 340px;
+}
+.fst > div:nth-child(2){
+    width: 340px;
+    height: 340px;
+}
+.fst > div:nth-child(3){
+    
+    width: 340px;
+    height: 340px;
+}
+.fst > div:nth-child(4){
+    
+    width: 340px;
+    height: 340px;
+}
+.fst > div:nth-child(5){
+    
+    width: 340px;
+    height: 340px;
+}
+.fst img{
+    width: 100%;
+    height: 100%;
 }
 .sec{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+   margin-left: 100px;
+   margin-right: 100px;
 }
-.sec div > img{
-    width: 342px;
-    height: 342px;
+.sec img{
+    width: 340px;
+    height: 340px;
 }
 
 
@@ -188,10 +266,13 @@ header > div > div ul{
     margin-left: 100px;
     position: relative;
 }
-.main03 h2{
-    font-weight: 600;
+.main03 > h2{
+    font-weight: 1000;
     font-size: 32px;
     line-height: 1.2;
+    color: inherit;
+    font-style: normal;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
 }
 .point03{
     width: 14px;
@@ -200,15 +281,12 @@ header > div > div ul{
     left:58%;
     top: 10%;
 }
-.point03 p{
-    opacity: 0.4;
-    font-weight: 600;
+.crs p{
     font-family: 'Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
     color: #363636;
+    opacity: 0.4;
+    font-weight: 600;
 }
-
-
-
 
 
 .btn02{
@@ -216,16 +294,21 @@ header > div > div ul{
     margin-top: 70px;
     margin-bottom: 100px;
 }
-.btn02 button{
-    border-color: rgba(54, 54, 54, 0.2);
+.btn02 > button{
     border: 1px solid ;
-    width: 250px;
+    width: 260px;
     padding: 17px 24px 21px 20px;
     text-align: left;
-    background-color: #fff;
-    font-size: 14px;
-    color: rgba(54, 54, 54, 0.85);
     position: relative;
+    font-size: 14px;
+    background-color: #fff;
+    color: rgba(54, 54, 54, 0.85) !important;
+    border-color: rgba(54, 54, 54, 0.2);
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.42857143;
+    font-family: 'Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+
 }
 .btn02 button > span{
     
@@ -234,54 +317,608 @@ header > div > div ul{
     margin-right: 10px;
     margin-top: -1px;
 }
-
-
+.btn02 > button:hover{
+    cursor: pointer;
+    background-color: #fde700;
+    border: none;
+    transition: 1s;
+}
 
 /* footer */
-.foot01{
-    
-    border: 1px solid red;
+.foot01{ 
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 120px;
-    position: relative;
-    display: flex;
 }
-.foot01 a img{
-    width: 301px;
-    height: 301px;
+.sub01{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.sub01{
-    border: 1px solid black;
-    display: flex;
-    /* position: absolute; */
-    
+.sub01 > div {
+    width: 40px;
+    height: 40px;
+    font-weight: 800;
 }
 .sub01 > div:nth-child(1){
-    border:1px solid black;
-    border-radius: 100px;
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    padding: 0 0 0 4px;
-    text-align: center;
-    background-color: #fff;
+    left: 0%;
+    margin-top: 200px;
     margin-left: 10px;
+    padding: 8px 10px 8px 10px;
 }
+.sub01 > div:nth-child(1) > span{
+    padding: 8px 8px 8px 12px;
+    
+}
+
 .sub01 > div:nth-child(2){
-    border:1px solid black;
-    border-radius: 100px;
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    padding: 0 2px 0 0;
-    text-align: center;
-    background-color: #fff;
+    right: 0%;
+    margin-top: 200px;
     margin-right: 10px;
 }
+.sub01 > div:nth-child(2) > span{
+    padding: 10px 10px 10px 10px;
+}
+.sub01 > div > span{
+    border: 1px solid rgba(54, 54, 54, 0.2);
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+.alll{
+    position: relative;
+    
+}
+.alll > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.alll > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.alll > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.alll:hover{
+    display: block;
+}
+
+
+.yulll{
+    position: relative;
+}
+.yulll > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.yulll > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.yulll > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.seokk{
+    position: relative;
+}
+.seokk > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.seokk > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.seokk > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.hyungg{
+    position: relative;
+}
+.hyungg > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.hyungg > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.hyungg > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.falll{
+    position: relative;
+}
+.falll > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.falll > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.falll > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.soonn{
+    position: relative;
+}
+.soonn > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.soonn > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.soonn > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.tonsess{
+    position: relative;
+}
+.tonsess > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.tonsess > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.tonsess > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.byull{
+    position: relative;
+}
+.byull > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.byull > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.byull > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.kimm{
+    position: relative;
+}
+.kimm > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.kimm > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.kimm > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.ahh{
+    position: relative;
+}
+.ahh > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.ahh > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.ahh > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.ahhh{
+    position: relative;
+}
+.ahhh > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.ahhh > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.ahhh > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.hwann{
+    position: relative;
+}
+.hwann > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.hwann > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.hwann > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.cheoll{
+    position: relative;
+}
+.cheoll > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.cheoll > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.cheoll > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.jaee{
+    position: relative;
+}
+.jaee > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.jaee > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.jaee > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.jooo{
+    position: relative;
+}
+.jooo > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.jooo > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.jooo > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.hwannn{
+    position: relative;
+}
+.hwannn > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.hwannn > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.hwannn > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+.joo{
+    position: relative;
+}
+.joo > div{
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.joo > div > h2{
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.joo > div > span{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub02{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    position: relative;
+}
+.sub02 > div > a > img {
+    width: 410px;
+    height: 410px;
+}
+
+.sub02 > div:hover::after{
+    content: '';
+    display: block;
+    background:linear-gradient(0deg, rgba(253,231,0,1) 0%, rgba(253,231,0,0) 100%) !important;
+    position: absolute;
+    z-index: 1;
+    left:1;
+    top: 0;
+    width: 410px;
+    height: 410px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*하단 배경*/
@@ -297,7 +934,7 @@ header > div > div ul{
     width: 100%;
 }
 .hadan{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e5e7eb;
     padding-top: 40px;
     padding-bottom: 50px;
     margin-left: 100px;
@@ -317,6 +954,12 @@ header > div > div ul{
     margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    font-style: normal;
+    font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    color: inherit;
 }
 .bottom p{
     margin-top: 8px;
@@ -325,22 +968,53 @@ header > div > div ul{
 .mid{
     display: flex;
     flex-direction: column;
-    transform: translateX(-70%);
+    transform: translateX(-100%);
 }
 .mid span{
     margin-bottom: 30px;
 }
-.mid button{
+.mid > button{
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+}
+
+.mid > span{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(54, 54, 54, 0.4) !important;
+    letter-spacing: -0.5px !important;
+    cursor: pointer;
+    line-height: 1.42857143;
+    font-family: 'Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+}
+.mid > span > img{
+    width: 14px;
+    height: 14px;
+}
+
+.mid > button{
     background-color: #FAFAFA;
+    border-color: rgba(54, 54, 54, 0.2);
     padding: 17px 24px 21px 20px;
     text-align: left;
     position: relative;
+    font-size: 13px !important;
+    font-weight: 600;
+    color: rgba(54, 54, 54, 0.85) !important;
+    font-style: normal;
+    line-height: 1.42857143;font-family: 'Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif'; 
 }
 .bottom p {
     font-size: 18px;
-    color: rgba(54, 54, 54, 0.65);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(54, 54, 54, 0.65) !important;
+    border-color: rgba(0, 0, 0, 0.2);
     font-family: 'Gilroy','Spoqa Han Sans','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
     font-weight: 600;
+    font-style: normal;
+    line-height: 1.42857143;
 }
 .mid button > span{
     position: absolute;
@@ -348,6 +1022,7 @@ header > div > div ul{
     margin-right: 10px;
     margin-top: -1px;
 }
+
 .hadan > h2 {
     font-size: 34px;
 }
@@ -360,9 +1035,18 @@ header > div > div ul{
     font-size: 16px;
     font-weight: 600;
 }
+.hadan02 > span > img{
+    width: 15px;
+    height: 15px;
+}
 
 
-
+.mid > button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #fde700;
+    transition: 1s;
+}
 
 
 
